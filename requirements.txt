@@ -13,4 +13,3 @@ Pillow
 tensorflow
 paho-mqtt
 IPython
-httpcore-NetworkBackend
