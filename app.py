@@ -1,3 +1,4 @@
+import paho.mqtt.client as mqtt
 import streamlit as st
 import cv2
 import numpy as np
@@ -14,9 +15,24 @@ import time
 from machine import Pin
 import dht
 import ujson
+from time import sleep
+
+
+# MQTT settings
+MQTT_BROKER = os.getenv("broker.mqttdashboard.com")
+MQTT_PORT = int(os.getenv("1883"))
+MQTT_TOPIC = "luzcasa"
+MQTT_USER = os.getenv("MQTT_USER")
+MQTT_PW = os.getenv("MQTT_PW")
+
+
+
 
 
 st.title("Luces inteligentes en casa.")
+
+
+
 
 
 
