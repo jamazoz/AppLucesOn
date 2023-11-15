@@ -59,7 +59,6 @@ if st.button("Encender luz"):
     st.markdown(f"## Texto en audio:")
     st.write(f" {output_text}")
 
-
 if st.button("Apagar luz"):
     st.markdown(f"## Texto en audio:")
     st.write(f" {output_text}"
